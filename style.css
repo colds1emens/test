@@ -1,0 +1,226 @@
+* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* After reset */
+
+body{
+    font-family: 'Alumni Sans', sans-serif;
+    background-color: #0F070C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 6.7vw;
+    line-height: 6.3vw;
+    color: #fff;
+    padding: 0;
+    margin: 5vw 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 3.1vw;
+    line-height: 4vw;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-weight: 400;
+    font-size: 2.3vw;
+    line-height: 4vw;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+   color: #CF0025;
+}
+
+.text {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 7vw;
+}
+
+.contacts {
+    display: flex;
+    gap: 7vw;
+    align-items: center;
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+}
+
+.mail {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.mail > img {
+    width: 2.1vw;
+    height: 1.6vw;
+}
+
+.text > img {
+    width: 5.2vw;
+    height: 5.2vw;    
+}
+
+.robo {
+    width: 50%;
+}
+
+.robo > img {
+    width: 100%;
+}
+
+.wrap {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 770px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .robo {
+        width: 80%;
+    }
+
+    .wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;    
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 10vw;
+        line-height: 10vw;
+        color: #fff;
+        padding: 0;
+        margin: 5vw 0;
+    }
+    
+    p {
+        font-weight: 400;
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 4.5vw;
+        line-height: 6vw;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacts {
+        display: flex;
+        gap: 7vw;
+        align-items: center;
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .mail > img {
+        width: 3vw;
+        height: 2.3vw;
+    }
+    
+    .text > img {
+        width: 7vw;
+        height: 7vw;    
+    }
+}
+
